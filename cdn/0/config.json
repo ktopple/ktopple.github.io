@@ -135,7 +135,7 @@
   "attributes": {
     "portalUrl": "https://rskgroup.maps.arcgis.com",
     "isWebTier": false,
-    "clientId": "d1H7BghWgrwyxyk7",
+    "clientId": "",
     "title": "Dev ExB Test",
     "description": "",
     "type": "Web Experience",
