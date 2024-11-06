@@ -2,7 +2,7 @@
   "pages": {
     "page_0": {
       "id": "page_0",
-      "mode": "AUTO_SCROLL",
+      "mode": "FIT_WINDOW",
       "type": "NORMAL",
       "layout": {
         "LARGE": "layout_0"
@@ -14,68 +14,88 @@
   },
   "layouts": {
     "layout_0": {
-      "type": "FLOW",
+      "type": "FIXED",
       "content": {
         "0": {
           "type": "WIDGET",
           "widgetId": "widget_1",
           "bbox": {
-            "left": "453px",
-            "right": "853px",
-            "top": "0px",
-            "bottom": "400px",
-            "width": "400px",
-            "height": 420
+            "left": "23.4%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "76.6%",
+            "height": "100.0%"
           },
           "setting": {
-            "heightMode": "fixed"
-          }
-        }
-      },
-      "order": [
-        "0"
-      ]
-    },
-    "layout_1": {
-      "content": {
-        "0": {
-          "type": "WIDGET",
-          "widgetId": "widget_2",
-          "setting": {
-            "heightMode": "fit"
-          },
-          "bbox": {
-            "left": 0,
-            "width": 9,
-            "height": "400px"
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
           }
         },
         "1": {
           "type": "WIDGET",
-          "widgetId": "widget_3",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "0%",
+            "right": "38.8%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "23.4%",
+            "height": "100%"
+          },
           "setting": {
             "autoProps": {
+              "right": true,
+              "left": false,
+              "top": false,
+              "bottom": false,
               "height": "STRETCH"
-            }
-          },
-          "bbox": {
-            "left": 9,
-            "width": 3,
-            "height": 398.1817932128906
+            },
+            "hCenter": false,
+            "vCenter": false
           }
         }
       },
-      "type": "ROW",
-      "label": "Default",
       "order": [
         "0",
         "1"
       ]
     },
-    "layout_2": {
+    "layout_1": {
       "content": {},
       "type": "FIXED",
-      "label": "Map FixedLayout"
+      "label": "Map FixedLayout",
+      "order": []
+    },
+    "layout_2": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {
+            "width": "300px",
+            "height": "800px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          }
+        }
+      },
+      "type": "COLUMN",
+      "label": "Default",
+      "order": [
+        "0"
+      ]
     }
   },
   "exbVersion": "1.15.0",
@@ -84,31 +104,9 @@
   "forBuilderAttributes": {
     "lockLayout": false
   },
-  "template": "blankscrollable",
+  "template": "blankfullscreen",
   "widgets": {
     "widget_1": {
-      "uri": "widgets/layout/row/",
-      "version": "1.15.0",
-      "label": "Block",
-      "config": {
-        "space": 10,
-        "style": {
-          "padding": {
-            "number": [
-              10
-            ],
-            "unit": "px"
-          }
-        }
-      },
-      "id": "widget_1",
-      "layouts": {
-        "DEFAULT": {
-          "LARGE": "layout_1"
-        }
-      }
-    },
-    "widget_2": {
       "uri": "widgets/arcgis/arcgis-map/",
       "version": "1.15.0",
       "label": "Map",
@@ -123,10 +121,10 @@
         "initialMapDataSourceID": "dataSource_1",
         "initialMapState": null
       },
-      "id": "widget_2",
+      "id": "widget_1",
       "layouts": {
         "MapFixedLayout": {
-          "LARGE": "layout_2"
+          "LARGE": "layout_1"
         }
       },
       "useDataSources": [
@@ -136,13 +134,38 @@
         }
       ]
     },
-    "widget_3": {
-      "uri": "widgets/get-map-coordinates/",
+    "widget_2": {
+      "uri": "widgets/layout/column/",
       "version": "1.15.0",
+      "label": "Column",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_2",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_2"
+        }
+      }
+    },
+    "widget_3": {
+      "uri": "widgets/radio-layers/",
+      "version": "1.0.0",
+      "label": "Radio Layers",
       "config": {},
       "id": "widget_3",
       "useMapWidgetIds": [
-        "widget_2"
+        "widget_1"
       ]
     }
   },
@@ -154,8 +177,8 @@
     "dataSource_1": {
       "id": "dataSource_1",
       "type": "WEB_MAP",
-      "sourceLabel": "earthquake test",
-      "itemId": "2c9f8f1eaf4c4c5bae229fbe9616de41",
+      "sourceLabel": "Earthquakes and volcanoes",
+      "itemId": "751b7df9a88a452a95827b9aa3309aaf",
       "portalUrl": "https://rskgroup.maps.arcgis.com"
     }
   },
@@ -188,5 +211,5 @@
       "page_0": []
     }
   ],
-  "timestamp": 1730897177544
+  "timestamp": 1730904186835
 }

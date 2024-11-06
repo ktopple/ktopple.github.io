@@ -1,8 +1,8 @@
 export default {
-  _widgetLabel: 'Row',
+  _widgetLabel: 'Column',
   widgetProperties: 'Widget properties',
   widgetFunctions: 'Widget functions',
   widgetName: 'widget name:',
   widgetProps: 'widget properties:',
-  tips: 'Row'
+  tips: 'Column'
 }

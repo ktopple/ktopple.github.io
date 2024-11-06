@@ -1,6 +1,6 @@
 {
-  "name": "row",
-  "label": "Row",
+  "name": "column",
+  "label": "Column",
   "type": "widget",
   "widgetType": "LAYOUT",
   "version": "1.15.0",
@@ -16,12 +16,12 @@
     {
       "name": "DEFAULT",
       "label": "Default",
-      "type": "ROW"
+      "type": "COLUMN"
     }
   ],
   "defaultSize": {
-    "width": 800,
-    "height": 400
+    "width": 300,
+    "height": 600
   },
   "translatedLocales": [
     "en",
