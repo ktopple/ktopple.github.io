@@ -119,14 +119,22 @@
           "canSearch": true,
           "canNavigation": true
         },
-        "isUseCustomMapState": false
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_1",
+        "initialMapState": null
       },
       "id": "widget_2",
       "layouts": {
         "MapFixedLayout": {
           "LARGE": "layout_2"
         }
-      }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
     },
     "widget_3": {
       "uri": "widgets/get-map-coordinates/",
@@ -142,7 +150,15 @@
   "views": {},
   "sections": {},
   "dialogs": {},
-  "dataSources": {},
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "earthquake test",
+      "itemId": "2c9f8f1eaf4c4c5bae229fbe9616de41",
+      "portalUrl": "https://rskgroup.maps.arcgis.com"
+    }
+  },
   "messageConfigs": {},
   "attributes": {
     "portalUrl": "https://rskgroup.maps.arcgis.com",
@@ -178,6 +194,6 @@
       "page_0": []
     }
   ],
-  "timestamp": 1730892810701,
-  "publishTimestamp": 1730892898345
+  "timestamp": 1730897177544,
+  "publishTimestamp": 1730897179698
 }
