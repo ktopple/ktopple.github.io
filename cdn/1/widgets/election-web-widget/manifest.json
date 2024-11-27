@@ -1,0 +1,22 @@
+{
+  "name": "election-web-widget",
+  "label": "Election widget",
+  "type": "widget",
+  "version": "1.15.0",
+  "exbVersion": "1.15.0",
+  "author": "Esri R&D Center Beijing & Katy",
+  "description": "This is the widget used in developer documentation with the election widget added as the web component",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasConfig": false,
+    "hasSettingPage": false
+  },
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 300,
+    "height": 100
+  }
+}
