@@ -74,7 +74,6 @@ export default {
 
   unlockGridItem: 'Unlock this widget to reorganize its internal widgets.',
   lockGridItem: 'Lock this widget.',
-
-  splitHorizontally: 'Split horizontally',
-  splitVertically: 'Split vertically'
+  activeViewTip: 'Section. Active view {viewLabel}.',
+  widgetLabel: 'Widget label'
 }

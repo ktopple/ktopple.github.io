@@ -52,6 +52,9 @@ export default {
   dataAction_ExportCSV: 'Export to CSV',
   dataAction_ExportGeoJson: 'Export to GeoJSON',
   dataAction_ExportItem: 'Export to Item',
+  dataAction_ExportShp: 'Export to Shapefile',
+  dataAction_ExportGDB: 'Export to FGDB',
+  dataAction_ExportKML: 'Export to KML',
   dataAction_SetFilter: 'Set filter',
   dataAction_DataStatistics: 'Statistics',
   dataAction_RelatedData: 'Related data',
@@ -70,13 +73,17 @@ export default {
   error: 'Error',
   messageAction_SelectDataRecord: 'Select data records',
   messageAction_FilterDataRecord: 'Filter data records',
+  messageAction_TriggerData: 'Trigger data',
+  messageAction_ChangeView: 'Open view',
   action_addedData: 'Added: {label}',
 
   icon: 'Icon',
+  verySmall: 'Very small',
   small: 'Small',
   low: 'Low',
   high: 'High',
   large: 'Large',
+  varyLarge: 'Very large',
   short: 'Short',
   medium: 'Medium',
   long: 'Long',
@@ -90,9 +97,12 @@ export default {
   view: 'View',
   page: 'Page',
   dialog: 'Window',
+  makeHome: 'Make homepage',
+  makeSplash: 'Set as splash',
+  pageWindowSelect: 'Switch page and window',
   layout: 'Layout',
   theme: 'Theme',
-  dataSource: 'Datasource',
+  dataSource: 'Data source',
   block: 'Block',
   screenGroup: 'Screen group',
   screen: 'Screen',
@@ -119,8 +129,10 @@ export default {
   dataSourceCreateError: 'Data is inaccessible.',
   blockedByAdminErrorForApp: 'Your organization has blocked access to this application. Please contact your administrator for details.',
   blockedByAdminErrorForBuilder: 'Your organization has blocked access to Experience Builder. Please contact your administrator for details.',
+  readOnlyModeError: 'ArcGIS Online is experiencing operational issues and has temporarily switched to read-only mode. Some capabilities may be limited. For the latest updates on when this will be resolved, visit the {link}.',
+  readOnlyModeErrorLink: 'ArcGIS Online Health Dashboard',
   goToAnotherExperienceBtn: 'Go to another experience',
-  switchAccoutBtn: 'Switch account',
+  switchAccountBtn: 'Switch account',
   switch: 'Switch',
 
   // sign-in error
@@ -133,6 +145,11 @@ export default {
   signInBannerListWarning: 'Sorry, you don’t have access to the resources from the following servers or organizations. Click Sign in to provide credentials. Click Ignore to avoid loading the resource until you refresh the app.',
   signInBannerIgnore: 'Ignore',
   signInBannerIgnoreAll: 'Ignore all',
+
+  // experience state
+  restoreState: 'Restore experience state',
+  restoreStateTips: 'Restore the state of page, view, window, map viewpoint, and layer visibility where you left off.',
+  restoreStateAccept: 'Accept',
 
   //in upgrade
   upgradedFrom: 'Upgraded from previous config',
@@ -171,6 +188,8 @@ export default {
   elevationLayer: 'Elevation layer',
   rasterLayer: 'Raster Layer',
   orientedImageryLayer: 'Oriented Imagery Layer',
+  SubtypeGroupLayer: 'Subtype Group Layer',
+  SubtypeSublayer: 'Subtype Sublayer',
   vectorTileService: 'Vector Tile Service',
   wfsLayer: 'WFS Layer',
   wmsLayer: 'WMS Layer',
@@ -180,5 +199,7 @@ export default {
   outputView: '{dataSourceLabel} output view',
   buildingScene: 'Building Scene Layer',
   buildingGroup: 'Building Group Sublayer',
-  buildingComponent: 'Building Component Sublayer'
+  buildingComponent: 'Building Component Sublayer',
+  json: 'JSON',
+  exportItem: 'Item',
 }
