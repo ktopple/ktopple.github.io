@@ -2569,7 +2569,7 @@
   "attributes": {
     "portalUrl": "https://rskgroup.maps.arcgis.com"
   },
-  "timestamp": 1759844065293,
+  "timestamp": 1759847764494,
   "sharedThemeVariables": {
     "header": {
       "bg": "#497593",
@@ -2599,6 +2599,7 @@
     }
   },
   "permission": {
-    "blockSignInPrompt": true
+    "blockSignInPrompt": false,
+    "blockPermissionBanner": true
   }
 }

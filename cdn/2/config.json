@@ -2563,7 +2563,7 @@
     }
   },
   "useAutoSortInFixedLayout": true,
-  "publishTimestamp": 1759844079733,
+  "publishTimestamp": 1759847769526,
   "attributes": {
     "portalUrl": "https://rskgroup.maps.arcgis.com",
     "isWebTier": false,
@@ -2574,7 +2574,7 @@
     "type": "Web Experience",
     "thumbnail": null
   },
-  "timestamp": 1759844065293,
+  "timestamp": 1759847764494,
   "sharedThemeVariables": {
     "header": {
       "bg": "#497593",
@@ -2604,6 +2604,7 @@
     }
   },
   "permission": {
-    "blockSignInPrompt": true
+    "blockSignInPrompt": false,
+    "blockPermissionBanner": true
   }
 }
